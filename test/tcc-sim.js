@@ -2,7 +2,7 @@ var request = require('request');
 var inspect = require('util').inspect;
 var tcsUtil = require('./tcsUtils');
 
-
+// added some comments, to test github version control
 var dstHost = process.argv[2];
 var dstPort = process.argv[3];
 
@@ -17,7 +17,7 @@ var dstOptions = {
 	headers: {'Content-Type': 'text/xml'},
 	body:    buf
 	};
-
+// add one more line of comment
 tcsUtil.SHOW_AppOutput("debug",'\nNode.js TCC simulator.\nUsage: node tcc-sim.js <dest host> <dest port>\n');
 tcsUtil.SHOW_AppOutput("debug",'\nsending request to: '+ dstOptions.url);
 tcsUtil.SHOW_AppOutput("debug",'sending body: \n' + dstOptions.body);
