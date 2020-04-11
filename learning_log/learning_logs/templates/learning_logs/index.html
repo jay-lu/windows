@@ -1,0 +1,25 @@
+{% extends "learning_logs/base.html" %}
+
+{% block header %}
+    <div class='jumbotron'>
+        <h3>
+            <center>A small and private online repository to make your knowledge of USAP shine!</center>
+        </h3>
+    </div>
+{% endblock header %}
+
+{% block content %}
+    <h4>
+        <a href="{% url 'users:register' %}">Register right now</a> to make your own repository of USAP notes, and list the topics you're learning about! Whenever you're learning something new about a topic, make an entry summarizing what you've learned to review the material!
+    </h4>
+    <h5>
+        <a href="{% url 'learning_logs:topics' %}">Click here</a> to view your topics.
+    </h5>
+    <h2>
+        Public Notices:
+    </h2>
+    <h5>                                                                           
+        NOTICE TO AUDREY ZHANG 7-10: CHEATING IS NOT ACCEPTABLE IN THE SHSID USAP COMMUNITY, SO PLEASE LEARN SOME ACADEMIC INTEGRITY AND DON'T TAKE ADVANTAGE OF THE MILIEU.
+    </h5>
+    <i><center>Coded by Daniel L 7-3 SHSID</center></i>
+{% endblock content %}
